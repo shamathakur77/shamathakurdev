@@ -3,169 +3,223 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shama Thakur</title>
-<meta name="description" content="AI systems engineer. 100+ shipped projects. Stockholm.">
-<meta property="og:title" content="Shama Thakur — shamathakur.dev">
-<meta property="og:description" content="I don't prompt AI. I build the systems that do.">
+
+<!-- ═══ SEO ═══ -->
+<title>Shama Thakur — AI Systems Engineer · Data Engineer · Stockholm</title>
+<meta name="description" content="AI Systems Engineer and Senior Data Engineer based in Stockholm, Sweden. 14+ years experience. BigQuery, Anthropic API, EU AI Act compliance, GDPR, Copilot Studio. Open to senior AI, data, and consulting roles.">
+<meta name="keywords" content="AI systems engineer Stockholm, senior data engineer Sweden, EU AI Act compliance specialist, GDPR data engineer, BigQuery engineer, Anthropic API developer, AI agent developer, forward deployed engineer, AI consultant Sweden, data analytics Stockholm, Copilot Studio developer, RAG pipeline engineer, applied AI engineer, machine learning engineer Sweden">
+<meta name="author" content="Shama Thakur">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://shamathakur.dev/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shamathakur.dev/">
+<meta property="og:title" content="Shama Thakur — AI Systems Engineer · Stockholm">
+<meta property="og:description" content="14+ years in data engineering. 13 production AI agents. EU AI Act compliance architecture. BigQuery, Anthropic API, GDPR at 83-market scale.">
 <meta property="og:image" content="https://shamathakur.dev/og.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shama Thakur — AI Systems Engineer · Stockholm">
+<meta name="twitter:description" content="14+ years in data engineering. 13 production AI agents. EU AI Act compliance. Open to senior roles in Stockholm and globally.">
+
+<!-- JSON-LD structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Shama Thakur",
+  "url": "https://shamathakur.dev",
+  "email": "shama@shamathakur.dev",
+  "jobTitle": "AI Systems Engineer",
+  "description": "Senior AI Systems and Data Engineer based in Stockholm, Sweden. Specialising in enterprise AI agents, EU AI Act compliance, RAG pipelines, BigQuery, and GDPR-at-scale.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Stockholm",
+    "addressCountry": "SE"
+  },
+  "sameAs": [
+    "https://linkedin.com/in/shama-t-b7250632",
+    "https://github.com/shamathakur77"
+  ],
+  "knowsAbout": ["AI systems engineering", "EU AI Act", "GDPR", "BigQuery", "Anthropic API", "Copilot Studio", "RAG pipelines", "data engineering", "Python", "Power BI"]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
 :root{
-  --ink:#0d0c0a;
-  --paper:#f5f0e8;
-  --gold:#c9a84c;
-  --rust:#b85c38;
-  --teal:#3a7d74;
-  --dim:rgba(245,240,232,0.42);
-  --dimmer:rgba(245,240,232,0.22);
-  --line:rgba(201,168,76,0.14);
-  --line2:rgba(245,240,232,0.06);
+  /* Core palette */
+  --ink:     #0d0c0a;
+  --paper:   #f5f0e8;
+  --gold:    #c9a84c;
+  --rust:    #b85c38;
+  --teal:    #3a7d74;
+  /* Opacity layers */
+  --dim:     rgba(245,240,232,0.55);
+  --dimmer:  rgba(245,240,232,0.28);
+  --dimmest: rgba(245,240,232,0.14);
+  /* Lines */
+  --line:    rgba(201,168,76,0.18);
+  --line2:   rgba(245,240,232,0.07);
+  /* Layout */
+  --pad: 48px;
+  --max: 1180px;
 }
+
 html{scroll-behavior:smooth}
+
 body{
   background:var(--ink);
   color:var(--paper);
   font-family:'DM Mono',monospace;
   font-size:13px;
   font-weight:300;
-  line-height:1.7;
+  line-height:1.75;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
 
-/* GRAIN */
+/* subtle grain */
 body::after{
   content:'';position:fixed;inset:0;pointer-events:none;z-index:9000;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
-  opacity:.55;
+  opacity:.4;mix-blend-mode:overlay;
 }
 
-/* CURSOR */
-#c{position:fixed;inset:0;pointer-events:none;z-index:8999}
-
-/* NAV */
+/* ── NAV ── */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:500;
   display:flex;justify-content:space-between;align-items:center;
-  padding:16px 40px;
-  background:rgba(13,12,10,0.92);
-  backdrop-filter:blur(14px);
+  padding:18px var(--pad);
+  background:rgba(13,12,10,0.94);
+  backdrop-filter:blur(20px);
   border-bottom:1px solid var(--line2);
 }
 .logo{
   font-family:'Cormorant Garamond',serif;
-  font-size:15px;font-weight:300;letter-spacing:.15em;
+  font-size:14px;font-weight:300;letter-spacing:.18em;
   color:var(--gold);text-decoration:none;
 }
-.nav-r{display:flex;align-items:center;gap:28px}
-.nav-pill{
-  font-size:9px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--teal);display:flex;align-items:center;gap:5px;
-}
-.dot{width:5px;height:5px;border-radius:50%;background:var(--teal);animation:blink 2s ease-in-out infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-nav a.nl{
-  font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{
+  font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
   color:var(--dimmer);text-decoration:none;transition:color .2s;
 }
-nav a.nl:hover{color:var(--paper)}
+.nav-links a:hover{color:var(--paper)}
+.nav-status{
+  font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--teal);display:flex;align-items:center;gap:6px;
+}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--teal);
+  animation:blink 2.4s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
 
-/* ═══ ABOVE THE FOLD ═══ */
-/* Everything a person sees in 8 seconds lives here */
-.fold{
+/* ── HERO ── */
+.hero{
   min-height:100vh;
   display:grid;
   grid-template-rows:1fr auto;
-  padding:100px 40px 48px;
+  padding:120px var(--pad) 56px;
   border-bottom:1px solid var(--line2);
   position:relative;overflow:hidden;
+  max-width:100%;
 }
-.fold-rings{position:absolute;right:-120px;top:50%;transform:translateY(-55%);pointer-events:none}
-.fold-rings circle{fill:none;stroke:var(--gold)}
 
-.fold-top{}
-.eyebrow{
-  font-size:9px;letter-spacing:.24em;text-transform:uppercase;
-  color:var(--gold);margin-bottom:18px;
-  display:flex;align-items:center;gap:8px;
+/* Nordic geometry: single thin vertical line */
+.hero-line{
+  position:absolute;left:50%;top:0;bottom:0;width:1px;
+  background:linear-gradient(180deg,transparent,var(--line2) 30%,var(--line2) 70%,transparent);
+  pointer-events:none;
 }
-.eyebrow::before{content:'';width:20px;height:1px;background:var(--gold)}
+
+.hero-top{position:relative;max-width:var(--max);margin:0 auto;width:100%}
+
+.eyebrow{
+  font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:20px;
+  display:flex;align-items:center;gap:10px;
+}
+.eyebrow::before{content:'';width:24px;height:1px;background:var(--gold);flex-shrink:0}
 
 h1{
   font-family:'Cormorant Garamond',serif;
-  font-size:clamp(56px,9vw,116px);
-  font-weight:300;line-height:.9;letter-spacing:-.02em;
+  font-size:clamp(60px,8.5vw,120px);
+  font-weight:300;line-height:.88;letter-spacing:-.025em;
   color:var(--paper);
 }
 h1 em{font-style:italic;color:var(--gold);display:block}
 
 .tagline{
   font-family:'Cormorant Garamond',serif;
-  font-size:clamp(18px,2.5vw,28px);
+  font-size:clamp(19px,2.2vw,26px);
   font-weight:300;color:var(--dim);
-  margin-top:24px;margin-bottom:0;
-  max-width:580px;line-height:1.45;
+  margin-top:28px;max-width:540px;line-height:1.5;
 }
 .tagline strong{color:var(--paper);font-weight:400;font-style:italic}
 
-/* ROTATING ROLE */
-.role-wrap{margin-top:12px;height:20px;overflow:hidden}
-#role{
+.role-line{
+  margin-top:14px;height:22px;overflow:hidden;
   font-size:11px;color:var(--teal);letter-spacing:.1em;
-  border-right:1px solid var(--teal);padding-right:3px;
 }
+#role{border-right:1px solid var(--teal);padding-right:3px}
 
-/* FOLD BOTTOM — the 4 numbers + CTAs */
-.fold-bottom{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-  align-items:end;
-  padding-top:40px;
-  border-top:1px solid var(--line2);
-  margin-top:40px;
+/* hero bottom */
+.hero-bottom{
+  max-width:var(--max);margin:0 auto;width:100%;
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;
+  align-items:end;padding-top:48px;
+  border-top:1px solid var(--line2);margin-top:56px;
 }
-.nums{display:flex;gap:0}
-.num{
-  padding:0 32px 0 0;
-  margin-right:32px;
+.stats{display:flex;gap:0}
+.stat{
+  padding-right:36px;margin-right:36px;
   border-right:1px solid var(--line2);
 }
-.num:last-child{border-right:none;margin-right:0}
-.num-n{
+.stat:last-child{border-right:none;padding-right:0;margin-right:0}
+.stat-n{
   font-family:'Cormorant Garamond',serif;
-  font-size:40px;font-weight:300;color:var(--gold);line-height:1;
+  font-size:44px;font-weight:300;color:var(--gold);line-height:1;
 }
-.num-l{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--dimmer);margin-top:2px}
-.ctas{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+.stat-l{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--dimmer);margin-top:3px}
+.hero-ctas{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+
+/* ── BUTTONS ── */
 .btn{
   font-family:'DM Mono',monospace;
-  font-size:9px;letter-spacing:.18em;text-transform:uppercase;
-  text-decoration:none;padding:11px 22px;transition:all .2s;
-  display:inline-block;
+  font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
+  text-decoration:none;padding:12px 24px;transition:all .22s;
+  display:inline-block;cursor:pointer;border:none;
 }
-.btn-g{background:var(--gold);color:var(--ink);font-weight:400}
-.btn-g:hover{background:var(--paper)}
-.btn-o{border:1px solid var(--line);color:var(--dim)}
-.btn-o:hover{border-color:var(--gold);color:var(--gold)}
+.btn-gold{background:var(--gold);color:var(--ink);font-weight:400}
+.btn-gold:hover{background:var(--paper)}
+.btn-out{border:1px solid var(--line);color:var(--dim)}
+.btn-out:hover{border-color:var(--gold);color:var(--gold)}
 
-/* ═══ WORK ═══ */
-/* Tight grid — 3 columns, no padding waste */
-.work{padding:64px 40px;border-bottom:1px solid var(--line2)}
-.sec-hd{
+/* ── SECTION WRAPPER ── */
+.section{
+  padding:72px var(--pad);
+  border-bottom:1px solid var(--line2);
+}
+.section-inner{max-width:var(--max);margin:0 auto}
+.sec-head{
   display:flex;justify-content:space-between;align-items:baseline;
-  margin-bottom:28px;
+  margin-bottom:32px;
 }
 h2{
   font-family:'Cormorant Garamond',serif;
-  font-size:clamp(24px,3vw,40px);
+  font-size:clamp(26px,3vw,42px);
   font-weight:300;color:var(--paper);
 }
 h2 em{font-style:italic;color:var(--gold)}
-.sec-count{font-size:10px;color:var(--dimmer);letter-spacing:.1em}
+.sec-meta{font-size:10px;color:var(--dimmer);letter-spacing:.1em}
 
+/* ── WORK GRID ── */
 .grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -174,489 +228,505 @@ h2 em{font-style:italic;color:var(--gold)}
   border:1px solid var(--line2);
 }
 .card{
-  background:var(--ink);padding:24px 22px;
+  background:var(--ink);padding:28px 24px;
   position:relative;overflow:hidden;
   transition:background .2s;
 }
-.card:hover{background:rgba(201,168,76,0.03)}
-.card.wide{grid-column:span 2}
-.card.full{grid-column:span 3}
-.c-tag{font-size:9px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
-.ce{color:var(--rust)}.cai{color:#8a7fc7}.cc{color:var(--teal)}.ccr{color:var(--gold2,#9b7e38)}.cbr{color:var(--gold)}
+.card:hover{background:rgba(201,168,76,0.028)}
+.card.w2{grid-column:span 2}
+.card.w3{grid-column:span 3;padding:20px 24px}
+
+.c-tag{font-size:9px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:9px}
+.tag-ent{color:var(--rust)}
+.tag-ai{color:#8a7fc7}
+.tag-civic{color:var(--teal)}
+.tag-prod{color:var(--gold)}
+
 .c-title{
   font-family:'Cormorant Garamond',serif;
-  font-size:17px;font-weight:400;color:var(--paper);
-  margin-bottom:6px;line-height:1.2;
+  font-size:18px;font-weight:400;color:var(--paper);
+  margin-bottom:7px;line-height:1.2;
 }
-.c-title.big{font-size:22px}
-.c-body{font-size:11px;color:var(--dim);line-height:1.65;margin-bottom:12px}
-.c-pills{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px}
-.pill{font-size:9px;padding:2px 7px;border:1px solid var(--line);color:var(--dimmer)}
+.c-title.lg{font-size:23px}
+.c-body{font-size:11.5px;color:var(--dim);line-height:1.7;margin-bottom:12px}
+.c-pills{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:9px}
+.pill{font-size:9px;padding:2px 8px;border:1px solid var(--line2);color:var(--dimmer)}
+
 .c-link{
   font-size:10px;color:var(--teal);text-decoration:none;
   letter-spacing:.06em;border-bottom:1px solid rgba(58,125,116,.2);
   padding-bottom:1px;transition:all .2s;display:inline-block;
 }
-.c-link:hover{color:var(--gold);border-color:rgba(201,168,76,.35)}
-.c-bg{
+.c-link:hover{color:var(--gold);border-color:rgba(201,168,76,.3)}
+.c-bg-n{
   position:absolute;bottom:-8px;right:8px;
-  font-family:'Cormorant Garamond',serif;font-size:72px;
-  font-weight:300;color:rgba(201,168,76,0.04);line-height:1;
+  font-family:'Cormorant Garamond',serif;font-size:80px;
+  font-weight:300;color:rgba(201,168,76,0.035);line-height:1;
   pointer-events:none;
 }
-.c-stat{
+.c-stat-n{
   font-family:'Cormorant Garamond',serif;
-  font-size:48px;font-weight:300;color:var(--gold);line-height:1;margin-bottom:4px;
+  font-size:52px;font-weight:300;color:var(--gold);line-height:1;margin-bottom:4px;
 }
 .c-stat-l{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--dimmer)}
-.more{
-  grid-column:span 3;
-  padding:14px 22px;
-  font-size:10px;color:var(--dimmer);letter-spacing:.05em;
-  background:var(--ink);
-  border-top:none;
-}
 
-/* ═══ ME ═══ */
-.me{
-  padding:64px 40px;border-bottom:1px solid var(--line2);
-  display:grid;grid-template-columns:1fr 1fr;gap:64px;
+.grid-more{
+  background:var(--ink);padding:16px 24px;
+  font-size:10.5px;color:var(--dimmer);letter-spacing:.03em;
+  border-top:none;grid-column:span 3;
 }
-.me-left{}
-.me-right{padding-top:4px}
-.tl{}
-.tl-row{display:grid;grid-template-columns:56px 1fr;gap:0;border-bottom:1px solid var(--line2);padding:18px 0}
+.grid-more a{color:var(--teal);text-decoration:none}
+.grid-more a:hover{color:var(--gold)}
+
+/* ── STACK ── */
+.stack-section{padding:56px var(--pad);border-bottom:1px solid var(--line2)}
+.stack-inner{max-width:var(--max);margin:0 auto}
+.stack-group{margin-bottom:20px}
+.stack-group:last-child{margin-bottom:0}
+.stack-label{
+  font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--dimmer);margin-bottom:10px;
+}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{
+  font-size:10px;padding:5px 13px;border:1px solid var(--line2);
+  color:var(--dim);letter-spacing:.04em;transition:all .22s;
+}
+.chip.hi{border-color:var(--line);color:var(--gold)}
+.chip:hover{border-color:var(--line);color:var(--paper)}
+
+/* ── ABOUT ── */
+.about-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;
+}
+.tl-row{
+  display:grid;grid-template-columns:52px 1fr;gap:0;
+  border-bottom:1px solid var(--line2);padding:20px 0;
+}
 .tl-row:last-child{border-bottom:none}
 .tl-y{font-size:10px;color:var(--gold);letter-spacing:.08em;padding-top:2px}
-.tl-t{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--paper);margin-bottom:3px}
-.tl-d{font-size:11px;color:var(--dim);line-height:1.6;margin-bottom:4px}
-.tl-me{font-size:10px;color:var(--teal)}
-.me-quote{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(18px,2.2vw,26px);
-  font-style:italic;font-weight:300;
-  color:var(--paper);line-height:1.45;
-  border-left:2px solid var(--gold);
-  padding-left:20px;margin-bottom:24px;
-}
-.me-bio{font-size:12px;color:var(--dim);line-height:1.8;margin-bottom:20px}
+.tl-title{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--paper);margin-bottom:3px}
+.tl-desc{font-size:11px;color:var(--dim);line-height:1.65;margin-bottom:4px}
+.tl-note{font-size:10px;color:var(--teal)}
 
-/* ═══ SERVICES ═══ */
-.svcs{padding:64px 40px;border-bottom:1px solid var(--line2)}
-.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line2);border:1px solid var(--line2)}
-.svc{background:var(--ink);padding:28px 24px}
-.svc-n{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:rgba(201,168,76,.1);line-height:1;margin-bottom:12px}
-.svc-title{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--paper);margin-bottom:4px}
-.svc-price{font-size:10px;color:var(--gold);letter-spacing:.08em;margin-bottom:8px}
+.bio-quote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(18px,2vw,24px);
+  font-style:italic;font-weight:300;
+  color:var(--paper);line-height:1.5;
+  border-left:2px solid var(--gold);
+  padding-left:22px;margin-bottom:28px;
+}
+.bio-p{font-size:12px;color:var(--dim);line-height:1.85;margin-bottom:18px}
+.bio-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+
+/* ── SERVICES ── */
+.svc-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1px;background:var(--line2);border:1px solid var(--line2);
+}
+.svc{background:var(--ink);padding:28px 22px}
+.svc-n{
+  font-family:'Cormorant Garamond',serif;
+  font-size:40px;font-weight:300;
+  color:rgba(201,168,76,0.1);line-height:1;margin-bottom:14px;
+}
+.svc-title{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--paper);margin-bottom:4px}
+.svc-price{font-size:10px;color:var(--gold);letter-spacing:.08em;margin-bottom:10px}
 .svc-desc{font-size:11px;color:var(--dim);line-height:1.65}
 
-/* ═══ BRAND / QR ═══ */
-.brand{padding:64px 40px;border-bottom:1px solid var(--line2)}
-.brand-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line2);border:1px solid var(--line2)}
-.bc{background:var(--ink);padding:24px}
-.bc-icon{font-size:18px;margin-bottom:10px}
-.bc-title{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--paper);margin-bottom:5px}
-.bc-desc{font-size:11px;color:var(--dim);line-height:1.6}
-
-/* QR display */
-.qr-box{
-  margin-top:32px;
-  display:flex;gap:32px;align-items:center;
-  padding:28px;border:1px solid var(--line);
-  background:rgba(201,168,76,0.03);
+/* ── CTA ── */
+.cta-section{
+  padding:88px var(--pad);text-align:center;
+  border-bottom:1px solid var(--line2);
 }
-.qr-code{
-  width:96px;height:96px;flex-shrink:0;
-  background:var(--paper);padding:6px;
-}
-.qr-info{}
-.qr-url{
+.cta-section h2{
   font-family:'Cormorant Garamond',serif;
-  font-size:22px;color:var(--gold);font-weight:300;letter-spacing:.04em;
-  margin-bottom:6px;
-}
-.qr-sub{font-size:11px;color:var(--dim);line-height:1.6}
-.qr-hint{font-size:10px;color:var(--dimmer);margin-top:10px;letter-spacing:.06em}
-
-/* ═══ STACK ═══ */
-.stack{padding:48px 40px;border-bottom:1px solid var(--line2)}
-.stack-row{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px}
-.st-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--dimmer);width:100%;margin:14px 0 5px}
-.st-label:first-child{margin-top:0}
-.chip{
-  font-size:10px;padding:4px 11px;border:1px solid var(--line2);
-  color:var(--dim);letter-spacing:.04em;transition:all .2s;
-}
-.chip:hover,.chip.hi{border-color:var(--line);color:var(--gold)}
-
-/* ═══ CTA ═══ */
-.cta{padding:80px 40px;text-align:center}
-.cta h2{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(36px,6vw,72px);
+  font-size:clamp(40px,6vw,76px);
   font-weight:300;font-style:italic;
-  color:var(--paper);line-height:1;margin-bottom:14px;
+  color:var(--paper);line-height:1;margin-bottom:16px;
 }
-.cta-sub{font-size:12px;color:var(--dim);max-width:340px;margin:0 auto 32px;line-height:1.8}
-.cta-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.cta-sub{font-size:12px;color:var(--dim);max-width:360px;margin:0 auto 36px;line-height:1.9}
+.cta-buttons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 
-/* KOFI */
+/* ── KOFI ── */
 .kofi{
-  padding:16px 40px;
+  padding:18px var(--pad);
   display:flex;justify-content:space-between;align-items:center;
-  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-  background:rgba(201,168,76,0.03);
+  border-bottom:1px solid var(--line);
+  background:rgba(201,168,76,0.025);
 }
 .kofi p{font-size:11px;color:var(--dimmer)}
 .kofi a{
   font-size:9px;letter-spacing:.16em;text-transform:uppercase;
   color:var(--gold);text-decoration:none;
-  border:1px solid rgba(201,168,76,.25);padding:7px 18px;
+  border:1px solid rgba(201,168,76,.22);padding:7px 18px;
   transition:all .2s;
 }
 .kofi a:hover{background:var(--gold);color:var(--ink)}
 
-/* FOOTER */
+/* ── FOOTER ── */
 footer{
-  padding:28px 40px;
+  padding:28px var(--pad);
   display:flex;justify-content:space-between;align-items:center;
   border-top:1px solid var(--line2);
-  font-size:9px;color:var(--dimmer);
+  font-size:9.5px;color:var(--dimmer);
 }
 footer a{color:var(--dimmer);text-decoration:none;transition:color .2s;letter-spacing:.06em}
 footer a:hover{color:var(--gold)}
-.ft{display:flex;gap:16px}
+.ft{display:flex;gap:20px}
 
-/* RESPONSIVE */
-@media(max-width:860px){
-  nav{padding:14px 20px}
-  nav .nav-r a.nl{display:none}
-  .fold,.work,.me,.svcs,.brand,.stack,.cta{padding-left:20px;padding-right:20px}
-  .fold{padding-top:88px;padding-bottom:32px}
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  :root{--pad:20px}
+  nav{padding:14px var(--pad)}
+  nav .nav-links a:not(:last-child){display:none}
   h1{font-size:clamp(52px,14vw,80px)}
-  .fold-bottom{grid-template-columns:1fr;gap:20px}
-  .nums{flex-wrap:wrap;gap:20px}
-  .num{border-right:none;padding-right:0;margin-right:0;border-bottom:1px solid var(--line2);padding-bottom:12px}
-  .ctas{justify-content:flex-start}
+  .hero-bottom{grid-template-columns:1fr;gap:24px}
+  .stats{flex-wrap:wrap;gap:20px}
+  .stat{border-right:none;padding-right:0;margin-right:0;border-bottom:1px solid var(--line2);padding-bottom:14px}
+  .hero-ctas{justify-content:flex-start}
   .grid{grid-template-columns:1fr}
-  .card.wide,.card.full{grid-column:span 1}
-  .more{grid-column:span 1}
-  .me{grid-template-columns:1fr}
-  .svc-grid,.brand-row{grid-template-columns:1fr}
-  .qr-box{flex-direction:column;align-items:flex-start}
+  .card.w2,.card.w3,.grid-more{grid-column:span 1}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .svc-grid{grid-template-columns:1fr 1fr}
   .kofi{flex-direction:column;gap:12px;text-align:center}
-  footer{flex-direction:column;gap:10px;text-align:center}
+  footer{flex-direction:column;gap:12px;text-align:center}
 }
+@media(max-width:560px){
+  .svc-grid{grid-template-columns:1fr}
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
 </style>
 </head>
 <body>
 
-<canvas id="c"></canvas>
-
 <nav>
   <a href="#" class="logo">shamathakur.dev</a>
-  <div class="nav-r">
-    <a href="#work" class="nl">Work</a>
-    <a href="#services" class="nl">Hire me</a>
-    <a href="mailto:shama@shamathakur.dev" class="nl">Email</a>
-    <div class="nav-pill"><div class="dot"></div>Open · Stockholm</div>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#services">Hire me</a>
+    <a href="mailto:shama@shamathakur.dev">Email</a>
+    <div class="nav-status"><div class="dot"></div>Open · Stockholm</div>
   </div>
 </nav>
 
-<!-- ═══ FOLD — 8 seconds ═══ -->
-<div class="fold">
-  <svg class="fold-rings" width="500" height="500" viewBox="0 0 500 500">
-    <circle cx="250" cy="250" r="200" stroke-opacity=".05" stroke-width="1"/>
-    <circle cx="250" cy="250" r="150" stroke-opacity=".06" stroke-width="1"/>
-    <circle cx="250" cy="250" r="100" stroke-opacity=".08" stroke-width="1"/>
-    <circle cx="250" cy="250" r="60"  stroke-opacity=".04" stroke-width="1"/>
-  </svg>
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero-line" aria-hidden="true"></div>
 
-  <div class="fold-top">
-    <p class="eyebrow">Stockholm · AI Systems Engineer · Builder</p>
+  <div class="hero-top">
+    <p class="eyebrow">Stockholm · AI Systems Engineer · 14 Years in Data</p>
     <h1>Shama<em>Thakur</em></h1>
-    <p class="tagline">I don't prompt AI.<br><strong>I build the systems that do.</strong></p>
-    <div class="role-wrap"><span id="role">AI Systems Engineer</span></div>
+    <p class="tagline">
+      I don't prompt AI.<br>
+      <strong>I build the systems that do.</strong>
+    </p>
+    <div class="role-line"><span id="role">AI Systems Engineer</span></div>
   </div>
 
-  <div class="fold-bottom">
-    <div class="nums">
-      <div class="num"><div class="num-n">100+</div><div class="num-l">Shipped</div></div>
-      <div class="num"><div class="num-n">13</div><div class="num-l">Prod agents</div></div>
-      <div class="num"><div class="num-n">83</div><div class="num-l">GDPR markets</div></div>
-      <div class="num"><div class="num-n">14</div><div class="num-l">Yrs in data</div></div>
+  <div class="hero-bottom">
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-n">100+</div>
+        <div class="stat-l">Shipped</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">13</div>
+        <div class="stat-l">Prod agents</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">83</div>
+        <div class="stat-l">GDPR markets</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">14</div>
+        <div class="stat-l">Yrs in data</div>
+      </div>
     </div>
-    <div class="ctas">
-      <a href="#work" class="btn btn-g">See the work</a>
-      <a href="https://linkedin.com/in/shama-t-b7250632" target="_blank" rel="noopener" class="btn btn-o">LinkedIn</a>
-      <a href="mailto:shama@shamathakur.dev" class="btn btn-o">Email</a>
+    <div class="hero-ctas">
+      <a href="#work" class="btn btn-gold">See the work</a>
+      <a href="https://linkedin.com/in/shama-t-b7250632" target="_blank" rel="noopener" class="btn btn-out">LinkedIn</a>
+      <a href="mailto:shama@shamathakur.dev" class="btn btn-out">Email</a>
     </div>
   </div>
-</div>
+</section>
 
-<!-- ═══ WORK ═══ -->
-<div class="work" id="work">
-  <div class="sec-hd">
-    <h2>Things I've <em>shipped</em></h2>
-    <span class="sec-count">100+ live · real users · no demos</span>
-  </div>
-  <div class="grid">
-
-    <div class="card wide">
-      <div class="c-bg">13</div>
-      <p class="c-tag ce">Enterprise AI · H&M Group · Production</p>
-      <p class="c-title big">13 Copilot Studio Agents</p>
-      <p class="c-body">Athena, Faye, and 11 more. Built and deployed across H&M Group with organic cross-org adoption — no mandate, no budget, just usefulness spreading person to person. All 13 registered and risk-classified under EU AI Act (AIG.1/AIG.3) before the June 2026 deadline. The compliance architecture I designed is now the group standard.</p>
-      <div class="c-pills"><span class="pill">Copilot Studio</span><span class="pill">EU AI Act AIG.1/3</span><span class="pill">Enterprise</span><span class="pill">Stockholm</span></div>
-    </div>
-
-    <div class="card">
-      <p class="c-tag ce">H&M · Live</p>
-      <p class="c-title">GDPR at 83 Markets</p>
-      <p class="c-body">Cookie consent analytics across 300+ websites. BigQuery + Tealium/TCC + Power BI. Full pipeline built from scratch for Customer Trust & Compliance.</p>
-      <div class="c-pills"><span class="pill">BigQuery</span><span class="pill">Power BI</span></div>
-    </div>
-
-    <div class="card">
-      <p class="c-tag cai">RAG · Python · Built</p>
-      <p class="c-title">RAG Pipeline</p>
-      <p class="c-body">Full retrieval-augmented generation system. Local embeddings + Anthropic API. Context as architecture, not an afterthought.</p>
-      <div class="c-pills"><span class="pill">Python</span><span class="pill">Anthropic API</span><span class="pill">Vectors</span></div>
-    </div>
-
-    <div class="card">
-      <p class="c-tag cai">AI App · Live</p>
-      <p class="c-title">Frequency Studio</p>
-      <p class="c-body">AI creative tool. Sovereign by Source flagship.</p>
-      <a href="https://frequencystudio.vercel.app" target="_blank" rel="noopener" class="c-link">frequencystudio.vercel.app →</a>
-    </div>
-
-    <div class="card">
-      <p class="c-tag cai">Physics + AI · Live</p>
-      <p class="c-title">Cymatic Oracle</p>
-      <p class="c-body">8,000-particle Chladni plate simulation. Real standing-wave equation. Web Audio API. Claude oracle layer. Built in one session because someone asked me to build the craziest thing I could.</p>
-    </div>
-
-    <div class="card">
-      <p class="c-tag cai">Three.js · WebGL</p>
-      <p class="c-title">YANTRA</p>
-      <p class="c-body">Sacred geometry universe in Three.js. Real-time interactive WebGL. Because data and consciousness are the same thing at different scales.</p>
-    </div>
-
-    <div class="card">
-      <p class="c-tag cc">Civic · Own domain</p>
-      <p class="c-title">Klartväg</p>
-      <p class="c-body">Free multilingual Swedish immigration guide. Work permits, asylum, citizenship. Official sources only. klartvag.se — because I needed it and it didn't exist.</p>
-    </div>
-
-    <div class="card">
-      <p class="c-tag cc">Housing Tool · Live</p>
-      <p class="c-title">Bostad Decoder</p>
-      <p class="c-body">Stockholm housing listings in plain language. Hemnet decoded for people who didn't grow up here.</p>
-      <a href="https://bostad-decoder.vercel.app" target="_blank" rel="noopener" class="c-link">bostad-decoder.vercel.app →</a>
-    </div>
-
-    <div class="card">
-      <p class="c-tag cc">Expat Tool · Live</p>
-      <p class="c-title">Little Learner</p>
-      <p class="c-body">Swedish + Hindi + Marathi + English förskola vocabulary. For South Asian parents raising bilingual kids in Sweden.</p>
-      <a href="https://littlelearner.vercel.app" target="_blank" rel="noopener" class="c-link">littlelearner.vercel.app →</a>
-    </div>
-
-    <div class="card wide">
-      <p class="c-tag ccr">Web Comic · 12 Episodes · Live</p>
-      <p class="c-title big">Annam Brahma</p>
-      <p class="c-body">12 episodes, 72 slides. Maharashtrian food, consciousness, and lineage. Watercolour textures, brass thali, marigold motifs. Rooted in Nashik. Made in Stockholm. Instagram-ready PNG download per slide.</p>
-      <a href="https://annam-brahma.vercel.app" target="_blank" rel="noopener" class="c-link">annam-brahma.vercel.app →</a>
-    </div>
-
-    <div class="card">
-      <p class="c-tag cbr">Product · Gumroad</p>
-      <p class="c-title">Stillstack</p>
-      <p class="c-body">PowerShell automation tool for Windows. Researched, built, documented, listed, and sold. €19. The full loop, done.</p>
-    </div>
-
-    <div class="card">
-      <div class="c-stat">5+</div>
-      <div class="c-stat-l">Live Gumroad products</div>
-    </div>
-    <div class="card">
-      <div class="c-stat">2</div>
-      <div class="c-stat-l">Spotify podcasts<br>(ElevenLabs + Claude)</div>
-    </div>
-
-    <div class="more">
-      + Gnosis · MOR & MAA · Desi Stockholm · Sovereign Aisle · AKASHA · Tonic · Pattern · ICONIQUE · Element Compass Bazi · Sensorium · Wayfarer · Family Jury · Safar Saathi · Nyay · Sweden In Data · Flat Earth Clock · Aesthetic Worlds (5 worlds) · Papa Memorial · 70+ more on
-      <a href="https://github.com/shamathakur77" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:none">github.com/shamathakur77</a>
-    </div>
-  </div>
-</div>
-
-<!-- ═══ WHO I AM ═══ -->
-<div class="me" id="about">
-  <div class="me-left">
-    <p class="eyebrow" style="margin-bottom:16px">Who I am</p>
-    <h2 style="margin-bottom:20px">The <em>arc</em></h2>
-    <div class="tl">
-      <div class="tl-row">
-        <div class="tl-y">2010</div>
-        <div>
-          <div class="tl-t">Oracle, banking, India</div>
-          <div class="tl-d">Started in financial data engineering. Oracle PL/SQL, IBM DB2, real production systems with real consequences.</div>
-        </div>
+<!-- ══════════════════════ STACK ══════════════════════ -->
+<div class="stack-section" id="stack">
+  <div class="stack-inner">
+    <div class="stack-group">
+      <div class="stack-label">AI &amp; Agents</div>
+      <div class="chips">
+        <span class="chip hi">Claude API · Anthropic</span>
+        <span class="chip hi">Copilot Studio</span>
+        <span class="chip hi">RAG Pipelines</span>
+        <span class="chip hi">Context Engineering</span>
+        <span class="chip hi">Claude Code</span>
+        <span class="chip">ElevenLabs</span>
+        <span class="chip">Loop Engineering</span>
       </div>
-      <div class="tl-row">
-        <div class="tl-y">2019</div>
-        <div>
-          <div class="tl-t">Stockholm. H&M Group.</div>
-          <div class="tl-d">Moved from Nashik to Sweden. Joined H&M Customer Trust & Compliance. BigQuery, Tealium, GDPR at 83-market scale.</div>
-        </div>
+    </div>
+    <div class="stack-group">
+      <div class="stack-label">Data Engineering</div>
+      <div class="chips">
+        <span class="chip hi">BigQuery</span>
+        <span class="chip hi">Azure Synapse</span>
+        <span class="chip hi">Oracle PL/SQL</span>
+        <span class="chip hi">IBM DB2</span>
+        <span class="chip hi">PostgreSQL</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">Looker Studio</span>
+        <span class="chip">Tealium / TCC</span>
       </div>
-      <div class="tl-row">
-        <div class="tl-y">2023</div>
-        <div>
-          <div class="tl-t">Agent builder</div>
-          <div class="tl-d">Started building AI agents for H&M with zero mandate. Colleagues adopted them. 13 in production, EU AI Act compliant.</div>
-          <div class="tl-me">This is when I stopped being a data analyst and became something else.</div>
-        </div>
+    </div>
+    <div class="stack-group">
+      <div class="stack-label">Build</div>
+      <div class="chips">
+        <span class="chip hi">Python</span>
+        <span class="chip hi">React</span>
+        <span class="chip hi">HTML / CSS / JS</span>
+        <span class="chip hi">Vercel</span>
+        <span class="chip">Three.js</span>
+        <span class="chip">Web Audio API</span>
+        <span class="chip">PowerShell</span>
       </div>
-      <div class="tl-row">
-        <div class="tl-y">2025</div>
-        <div>
-          <div class="tl-t">Builder in public</div>
-          <div class="tl-d">Started shipping personal projects. Claude Code, Vercel, Anthropic API. 100+ repos. Civic tools, AI apps, a 12-episode web comic, a Gumroad product, two podcasts.</div>
-          <div class="tl-me">All of it built during nap times and late nights.</div>
-        </div>
-      </div>
-      <div class="tl-row">
-        <div class="tl-y">2026</div>
-        <div>
-          <div class="tl-t">Loop engineer</div>
-          <div class="tl-d">I don't prompt AI anymore. I build the systems that do. Time to make that legible to the world.</div>
-          <div class="tl-me">This site is that.</div>
-        </div>
+    </div>
+    <div class="stack-group">
+      <div class="stack-label">Compliance &amp; Governance</div>
+      <div class="chips">
+        <span class="chip hi">EU AI Act</span>
+        <span class="chip hi">GDPR</span>
+        <span class="chip hi">AIG.1 · AIG.3 Risk Classification</span>
+        <span class="chip hi">AI Governance Frameworks</span>
+        <span class="chip">Cookie Consent Analytics</span>
+        <span class="chip">Data Ethics</span>
       </div>
     </div>
   </div>
-  <div class="me-right">
-    <p class="me-quote">"My job is to write loops. I don't prompt Claude anymore."<br><span style="font-size:13px;font-style:normal;color:var(--dimmer)">Boris Cherny, Head of Claude Code · Anthropic, June 2026</span></p>
-    <p class="me-bio">I've been operating this way before it had a name. South Asian expat in Stockholm. Data engineer by training. Agent architect by practice. Mother, manifester, builder of things that probably shouldn't exist yet.</p>
-    <p class="me-bio">The compliance depth most AI engineers skip — EU AI Act, GDPR at scale, risk classification — is something I have because I lived it inside a 300+ website, 83-market enterprise. That combination is genuinely rare.</p>
-    <p class="me-bio">I also believe data and consciousness are the same thing at different scales. That's not separate from the engineering. It's the source of it.</p>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
-      <a href="https://sovereignbysource.substack.com" target="_blank" rel="noopener" class="btn btn-o">Substack</a>
-      <a href="https://github.com/shamathakur77" target="_blank" rel="noopener" class="btn btn-o">GitHub</a>
-      <a href="https://instagram.com/shama_thakur77" target="_blank" rel="noopener" class="btn btn-o">Instagram</a>
-    </div>
-  </div>
 </div>
 
-<!-- ═══ SERVICES ═══ -->
-<div class="svcs" id="services">
-  <h2 style="margin-bottom:28px">Work <em>with me</em></h2>
-  <div class="svc-grid">
-    <div class="svc">
-      <div class="svc-n">01</div>
-      <div class="svc-title">AI Systems Audit</div>
-      <div class="svc-price">From €1,500</div>
-      <div class="svc-desc">I look at your agents, prompts, pipelines, and compliance posture. Tell you what's a liability, what's underbuilt, and what needs a loop instead of a prompt.</div>
+<!-- ══════════════════════ WORK ══════════════════════ -->
+<section class="section" id="work">
+  <div class="section-inner">
+    <div class="sec-head">
+      <h2>Things I've <em>shipped</em></h2>
+      <span class="sec-meta">100+ live · real users · no demos</span>
     </div>
-    <div class="svc">
-      <div class="svc-n">02</div>
-      <div class="svc-title">Agent Build & Deploy</div>
-      <div class="svc-price">From €3,000</div>
-      <div class="svc-desc">Production-grade AI agents. Copilot Studio or Claude API. EU AI Act compliance built in from day one, not bolted on later.</div>
-    </div>
-    <div class="svc">
-      <div class="svc-n">03</div>
-      <div class="svc-title">Speaking & Workshops</div>
-      <div class="svc-price">Contact for rates</div>
-      <div class="svc-desc">Loop Engineering. Building with Claude. AI in enterprise. GDPR + AI Act for non-lawyers. I've done H&M's internal AI Academy. I can do yours.</div>
-    </div>
-    <div class="svc">
-      <div class="svc-n">04</div>
-      <div class="svc-title">Data Pipeline & BI</div>
-      <div class="svc-price">From €2,000</div>
-      <div class="svc-desc">14 years of real data engineering. BigQuery, Azure Synapse, Power BI. Dashboards that get used, not admired once and forgotten.</div>
+
+    <div class="grid">
+
+      <!-- Enterprise flagship -->
+      <div class="card w2 reveal">
+        <div class="c-bg-n">13</div>
+        <p class="c-tag tag-ent">Enterprise AI · H&amp;M Group · Production</p>
+        <p class="c-title lg">13 Copilot Studio Agents</p>
+        <p class="c-body">Athena, Faye, and 11 more. Built and deployed across H&amp;M Group with organic cross-org adoption — no mandate, no budget, just utility spreading person to person. All 13 registered and risk-classified under EU AI Act (AIG.1/AIG.3) before the June 2026 compliance deadline. The compliance architecture I designed is now the group standard.</p>
+        <div class="c-pills">
+          <span class="pill">Copilot Studio</span>
+          <span class="pill">EU AI Act AIG.1 / AIG.3</span>
+          <span class="pill">AI Governance</span>
+          <span class="pill">Enterprise Scale</span>
+          <span class="pill">H&amp;M Group</span>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <p class="c-tag tag-ent">H&amp;M · Live</p>
+        <p class="c-title">GDPR at 83 Markets</p>
+        <p class="c-body">Cookie consent analytics across 300+ websites. Full pipeline: BigQuery, Tealium/TCC, Power BI. Built from scratch for Customer Trust &amp; Compliance.</p>
+        <div class="c-pills">
+          <span class="pill">BigQuery</span><span class="pill">Power BI</span><span class="pill">GDPR</span>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <p class="c-tag tag-ai">RAG · Python · Anthropic API</p>
+        <p class="c-title">RAG Pipeline</p>
+        <p class="c-body">Full retrieval-augmented generation system. Local embeddings, Anthropic API, vector search. Context as architecture, not an afterthought.</p>
+        <div class="c-pills">
+          <span class="pill">Python</span><span class="pill">Anthropic API</span><span class="pill">Vectors</span>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <p class="c-tag tag-ai">AI App · Live</p>
+        <p class="c-title">Frequency Studio</p>
+        <p class="c-body">AI-powered creative tool. Stripe-gated, production-ready, live users.</p>
+        <a href="https://frequencystudio.vercel.app" target="_blank" rel="noopener" class="c-link">frequencystudio.vercel.app →</a>
+      </div>
+
+      <div class="card reveal">
+        <p class="c-tag tag-ai">Physics + AI · Live</p>
+        <p class="c-title">Cymatic Oracle</p>
+        <p class="c-body">8,000-particle Chladni plate simulation. Real standing-wave physics, Web Audio API, Claude oracle layer.</p>
+      </div>
+
+      <div class="card reveal">
+        <p class="c-tag tag-civic">Civic Tech · Own domain</p>
+        <p class="c-title">Klartväg</p>
+        <p class="c-body">Free multilingual Swedish immigration guide — work permits, asylum, citizenship. Official sources only. klartvag.se.</p>
+      </div>
+
+      <div class="card reveal">
+        <p class="c-tag tag-civic">Housing Tool · Stockholm</p>
+        <p class="c-title">Bostad Decoder</p>
+        <p class="c-body">Hemnet listings decoded in plain language for people who didn't grow up reading Swedish housing contracts.</p>
+        <a href="https://bostad-decoder.vercel.app" target="_blank" rel="noopener" class="c-link">bostad-decoder.vercel.app →</a>
+      </div>
+
+      <div class="card reveal">
+        <p class="c-tag tag-prod">Product · Gumroad · Sold</p>
+        <p class="c-title">Stillstack</p>
+        <p class="c-body">PowerShell automation tool. Researched, built, documented, listed, sold. €19. The full product loop, end to end.</p>
+      </div>
+
+      <div class="card reveal">
+        <div class="c-stat-n">5+</div>
+        <div class="c-stat-l">Live Gumroad products</div>
+      </div>
+
+      <div class="card reveal">
+        <div class="c-stat-n">2</div>
+        <div class="c-stat-l">Spotify podcasts<br>(ElevenLabs + Claude)</div>
+      </div>
+
+      <div class="card w2 reveal">
+        <p class="c-tag tag-prod">Web Comic · 12 Episodes · Live</p>
+        <p class="c-title">Annam Brahma</p>
+        <p class="c-body">12 episodes, 72 slides. Maharashtrian food, consciousness, lineage. Watercolour textures, marigold motifs. Rooted in Nashik. Made in Stockholm.</p>
+        <a href="https://annam-brahma.vercel.app" target="_blank" rel="noopener" class="c-link">annam-brahma.vercel.app →</a>
+      </div>
+
+      <div class="grid-more reveal">
+        + Gnosis · YANTRA · Desi Stockholm · Sovereign Aisle · AKASHA · Pattern Tracker · ICONIQUE · Element Compass · Safar Saathi · Sweden In Data · Little Learner · Family Jury · 70+ more on
+        <a href="https://github.com/shamathakur77" target="_blank" rel="noopener">github.com/shamathakur77</a>
+      </div>
+
     </div>
   </div>
-</div>
+</section>
 
-<!-- ═══ QR / BRAND ═══ -->
-<div class="brand" id="brand">
-  <h2 style="margin-bottom:8px">Meet me <em>anywhere</em></h2>
-  <p style="font-size:12px;color:var(--dim);margin-bottom:28px;max-width:480px">One URL. Scan it, tap it, type it. The same page works for a recruiter at a conference, a family member trying to understand what you do, and a stranger at a hackathon.</p>
+<!-- ══════════════════════ ABOUT ══════════════════════ -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
 
-  <div class="brand-row">
-    <div class="bc">
-      <div class="bc-icon">📱</div>
-      <div class="bc-title">QR Card</div>
-      <div class="bc-desc">shamathakur.dev as a QR code on a Moo or Vistaprint card. Hand it to recruiters, investors, collaborators. One scan, whole picture.</div>
-    </div>
-    <div class="bc">
-      <div class="bc-icon">🏷️</div>
-      <div class="bc-title">NFC Sticker</div>
-      <div class="bc-desc">Programme an NFC sticker (£12 for 10 on Amazon) to open shamathakur.dev. Stick it on your laptop lid, your notebook, your conference badge. Anyone who taps gets the full site.</div>
-    </div>
-    <div class="bc">
-      <div class="bc-icon">✉️</div>
-      <div class="bc-title">Email Signature</div>
-      <div class="bc-desc">shama@shamathakur.dev as your professional address (Porkbun email forwarding, free). Signature: name · title · shamathakur.dev · LinkedIn.</div>
-    </div>
-    <div class="bc">
-      <div class="bc-icon">🎤</div>
-      <div class="bc-title">Speaker One-Pager</div>
-      <div class="bc-desc">Single PDF: who you are, three talk titles, one QR code, one email. For conference organisers. Fit on one A4, nothing more.</div>
-    </div>
-    <div class="bc">
-      <div class="bc-icon">📄</div>
-      <div class="bc-title">CV Editions</div>
-      <div class="bc-desc">Three CVs, one URL: FDE edition (Salesforce/Palantir), Anthropic edition (Applied AI), Consultant edition. Each one-page. All link back here.</div>
-    </div>
-    <div class="bc">
-      <div class="bc-icon">🔗</div>
-      <div class="bc-title">Link in Bio</div>
-      <div class="bc-desc">Point your existing link-in-bio to shamathakur.dev. One canonical URL everywhere: Instagram, LinkedIn, Substack, GitHub.</div>
+      <div>
+        <p class="eyebrow" style="margin-bottom:16px">The arc</p>
+        <div>
+          <div class="tl-row reveal">
+            <div class="tl-y">2010</div>
+            <div>
+              <div class="tl-title">Oracle · Banking · India</div>
+              <div class="tl-desc">Financial data engineering. Oracle PL/SQL, IBM DB2, production systems with real consequences.</div>
+            </div>
+          </div>
+          <div class="tl-row reveal">
+            <div class="tl-y">2014</div>
+            <div>
+              <div class="tl-title">Oncology · Automotive · Diversification</div>
+              <div class="tl-desc">Cross-sector data work across healthcare and manufacturing. 14 years builds pattern recognition no one course can give you.</div>
+            </div>
+          </div>
+          <div class="tl-row reveal">
+            <div class="tl-y">2019</div>
+            <div>
+              <div class="tl-title">Stockholm · H&amp;M Group</div>
+              <div class="tl-desc">Moved from Nashik to Sweden. H&amp;M Customer Trust &amp; Compliance. BigQuery, Tealium, GDPR at 83-market scale.</div>
+            </div>
+          </div>
+          <div class="tl-row reveal">
+            <div class="tl-y">2023</div>
+            <div>
+              <div class="tl-title">Agent builder</div>
+              <div class="tl-desc">Started building AI agents inside H&amp;M with zero mandate. Colleagues adopted them. 13 in production, EU AI Act compliant.</div>
+              <div class="tl-note">This is when I stopped being a data analyst and became something else.</div>
+            </div>
+          </div>
+          <div class="tl-row reveal">
+            <div class="tl-y">2025–</div>
+            <div>
+              <div class="tl-title">Builder in public</div>
+              <div class="tl-desc">100+ repos. Claude Code, Vercel, Anthropic API. Civic tools, AI apps, products, a web comic, two podcasts. All built during nap times and late nights.</div>
+              <div class="tl-note">This site is the work made visible.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="bio-quote">"My job is to write loops. I don't prompt Claude anymore."<br>
+          <span style="font-size:13px;font-style:normal;color:var(--dimmer)">Boris Cherny, Head of Claude Code · Anthropic, June 2026</span>
+        </p>
+        <p class="bio-p">I've been operating this way before it had a name. South Asian expat in Stockholm. Data engineer by training. Agent architect by practice. The compliance depth most AI engineers skip — EU AI Act, GDPR at enterprise scale, AI risk classification — is something I have because I lived it inside a 300+ website, 83-market enterprise.</p>
+        <p class="bio-p">That combination is genuinely rare: someone who can build the agent, design its governance framework, and ship a compliant product to production — without a team of specialists around her.</p>
+        <p class="bio-p">I also build things at night that probably shouldn't exist yet. A 12-episode web comic about consciousness and food. A multilingual immigration guide. 100+ apps on Vercel. Because the builders who ship the most are the ones who can't stop.</p>
+        <div class="bio-links">
+          <a href="https://linkedin.com/in/shama-t-b7250632" target="_blank" rel="noopener" class="btn btn-out">LinkedIn</a>
+          <a href="https://github.com/shamathakur77" target="_blank" rel="noopener" class="btn btn-out">GitHub</a>
+          <a href="https://sovereignbysource.substack.com" target="_blank" rel="noopener" class="btn btn-out">Substack</a>
+        </div>
+      </div>
+
     </div>
   </div>
+</section>
 
-  <div class="qr-box">
-    <img src="frame.svg" class="qr-code" alt="QR code for shamathakur.dev">
-    <div class="qr-info">
-      <div class="qr-url">shamathakur.dev</div>
-      <div class="qr-sub">Scan this at a conference. Tap an NFC sticker programmed to this URL. Share it anywhere. One link that shows the whole picture — recruiter, investor, collaborator, human.</div>
+<!-- ══════════════════════ SERVICES ══════════════════════ -->
+<section class="section" id="services">
+  <div class="section-inner">
+    <div class="sec-head">
+      <h2>Work <em>with me</em></h2>
+      <span class="sec-meta">Stockholm · Remote · Available now</span>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <div class="svc-n">01</div>
+        <div class="svc-title">AI Systems Audit</div>
+        <div class="svc-price">From €1,500</div>
+        <div class="svc-desc">I review your agents, prompts, pipelines, and compliance posture. Identify liability, what's underbuilt, and what needs a system instead of a prompt.</div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc-n">02</div>
+        <div class="svc-title">Agent Build &amp; Deploy</div>
+        <div class="svc-price">From €3,000</div>
+        <div class="svc-desc">Production-grade AI agents. Copilot Studio or Claude API. EU AI Act compliance built in from day one, not bolted on after launch.</div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc-n">03</div>
+        <div class="svc-title">Data Pipeline &amp; BI</div>
+        <div class="svc-price">From €2,000</div>
+        <div class="svc-desc">14 years of real data engineering. BigQuery, Azure Synapse, Power BI. Dashboards that get used, not admired once and abandoned.</div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc-n">04</div>
+        <div class="svc-title">Speaking &amp; Workshops</div>
+        <div class="svc-price">Contact for rates</div>
+        <div class="svc-desc">Loop Engineering. Building with Claude. AI Act for non-lawyers. GDPR at enterprise scale. Done H&amp;M's internal AI Academy. Available for external events.</div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- STACK -->
-<div class="stack">
-  <div class="stack-row">
-    <span class="st-label">AI & Agents</span>
-    <span class="chip hi">Claude Code</span><span class="chip hi">Anthropic API</span><span class="chip hi">Copilot Studio</span><span class="chip hi">RAG Pipelines</span><span class="chip hi">Context Engineering</span><span class="chip">Loop Engineering</span><span class="chip">ElevenLabs</span>
-    <span class="st-label">Data</span>
-    <span class="chip hi">BigQuery</span><span class="chip hi">Azure Synapse</span><span class="chip hi">Oracle PL/SQL</span><span class="chip hi">IBM DB2</span><span class="chip">Power BI</span><span class="chip">Looker Studio</span><span class="chip">Tealium/TCC</span><span class="chip">PostgreSQL</span>
-    <span class="st-label">Build</span>
-    <span class="chip hi">Python</span><span class="chip hi">React</span><span class="chip hi">Vercel CLI</span><span class="chip hi">HTML/CSS/JS</span><span class="chip">Three.js</span><span class="chip">Web Audio API</span><span class="chip">PowerShell</span>
-    <span class="st-label">Compliance</span>
-    <span class="chip hi">EU AI Act</span><span class="chip hi">GDPR</span><span class="chip hi">AIG.1/AIG.3</span><span class="chip">Risk Classification</span>
+<!-- ══════════════════════ CTA ══════════════════════ -->
+<section class="cta-section" id="contact">
+  <h2>Let's build<br>something real.</h2>
+  <p class="cta-sub">Stockholm. Open to senior AI engineering roles, consulting, and speaking. Direct people only.</p>
+  <div class="cta-buttons">
+    <a href="https://linkedin.com/in/shama-t-b7250632" target="_blank" rel="noopener" class="btn btn-gold">LinkedIn</a>
+    <a href="mailto:shama@shamathakur.dev" class="btn btn-out">shama@shamathakur.dev</a>
+    <a href="https://github.com/shamathakur77" target="_blank" rel="noopener" class="btn btn-out">GitHub</a>
   </div>
-</div>
+</section>
 
 <div class="kofi">
-  <p>Building in public. Support the work if it's been useful to you.</p>
+  <p>Building in public. Support the work if it's useful to you.</p>
   <a href="https://ko-fi.com/shamathakur" target="_blank" rel="noopener">Support on Ko-fi →</a>
-</div>
-
-<div class="cta" id="contact">
-  <h2>Let's build<br>something real.</h2>
-  <p class="cta-sub">Stockholm. Open to roles, consulting, speaking, and building. Direct people only.</p>
-  <div class="cta-row">
-    <a href="https://linkedin.com/in/shama-t-b7250632" target="_blank" rel="noopener" class="btn btn-g">LinkedIn</a>
-    <a href="mailto:shama@shamathakur.dev" class="btn btn-o">Email</a>
-    <a href="https://sovereignbysource.substack.com" target="_blank" rel="noopener" class="btn btn-o">Substack</a>
-    <a href="https://github.com/shamathakur77" target="_blank" rel="noopener" class="btn btn-o">GitHub</a>
-  </div>
 </div>
 
 <footer>
@@ -670,43 +740,38 @@ footer a:hover{color:var(--gold)}
 </footer>
 
 <script>
-// CURSOR TRAIL
-const cv=document.getElementById('c'),x=cv.getContext('2d');
-function rs(){cv.width=innerWidth;cv.height=innerHeight}rs();
-addEventListener('resize',rs);
-const pts=[];
-addEventListener('mousemove',e=>{
-  for(let i=0;i<3;i++) pts.push({x:e.clientX,y:e.clientY,l:1,s:Math.random()*2+.5,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5-.3});
-});
-(function loop(){
-  x.clearRect(0,0,cv.width,cv.height);
-  for(let i=pts.length-1;i>=0;i--){
-    const p=pts[i];p.x+=p.vx;p.y+=p.vy;p.l-=.022;
-    if(p.l<=0){pts.splice(i,1);continue}
-    x.beginPath();x.arc(p.x,p.y,p.s,0,Math.PI*2);
-    x.fillStyle=`rgba(201,168,76,${p.l*.45})`;x.fill();
-  }
-  requestAnimationFrame(loop);
-})();
-
-// ROTATING ROLE
-const roles=['AI Systems Engineer','Loop Architect','EU AI Act Specialist','RAG Pipeline Designer','Builder of 100+ Things','Forward Deployed Engineer','Data Engineering Lead','Vibe Coder · Ship First'];
+// ROTATING ROLE TYPEWRITER
+const roles = [
+  'AI Systems Engineer',
+  'Loop Architect',
+  'EU AI Act Specialist',
+  'RAG Pipeline Designer',
+  'Forward Deployed Engineer',
+  'Data Engineering Lead',
+  'Builder · 100+ Shipped',
+  'GDPR · AI Governance'
+];
 let ri=0,ci=0,del=false;
 const el=document.getElementById('role');
 function type(){
   const t=roles[ri];
-  if(!del){el.textContent=t.slice(0,++ci);if(ci===t.length){del=true;setTimeout(type,2000);return}}
-  else{el.textContent=t.slice(0,--ci);if(ci===0){del=false;ri=(ri+1)%roles.length}}
-  setTimeout(type,del?38:72);
+  if(!del){
+    el.textContent=t.slice(0,++ci);
+    if(ci===t.length){del=true;setTimeout(type,2200);return}
+  } else {
+    el.textContent=t.slice(0,--ci);
+    if(ci===0){del=false;ri=(ri+1)%roles.length}
+  }
+  setTimeout(type,del?36:74);
 }
 type();
 
 // SCROLL REVEAL
-const ob=new IntersectionObserver(e=>e.forEach(n=>{if(n.isIntersecting){n.target.style.opacity='1';n.target.style.transform='translateY(0)'}}),{threshold:.1});
-document.querySelectorAll('.card,.svc,.bc,.tl-row').forEach(el=>{
-  el.style.cssText+=';opacity:0;transform:translateY(12px);transition:opacity .5s,transform .5s';
-  ob.observe(el);
-});
+const ob=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in')}});
+},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>ob.observe(el));
 </script>
+
 </body>
 </html>
